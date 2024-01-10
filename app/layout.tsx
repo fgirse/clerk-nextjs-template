@@ -17,7 +17,7 @@ import { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next.js Clerk Template",
+  title: "8zense.com",
   description:
     "A simple and powerful Next.js template featuring authentication and user management powered by Clerk.",
   openGraph: { images: ["/og.png"] },
@@ -48,23 +48,23 @@ export default function RootLayout({
         }}
       >
         <body className={`${inter.className} min-h-screen flex flex-col`}>
-          <header className="flex items-center h-20 gap-4 px-4 border-b border-black border-solid sm:px-8 border-opacity-20">
+          <header className="bg-lime-900/60 flex items-center h-20 gap-4 px-4 border-b border-amber-600 border-solid sm:px-8 border-opacity-20">
             <Link href="/" className="flex items-center h-20 gap-2 sm:gap-4">
               <Image
-                src="/clerk.svg"
-                alt="Clerk Logo"
-                width={102}
-                height={32}
+                src="/images/LogoEZ.png"
+                alt="8zense.com Logo"
+                width={55}
+                height={55}
                 priority
               />
-              <Times />
+              {/*<Times />
               <Image
                 src="/next.svg"
                 alt="Next.js Logo"
                 width={90}
                 height={18}
                 priority
-              />
+      />*/}
             </Link>
             <div className="grow" />
             <SignedIn>
