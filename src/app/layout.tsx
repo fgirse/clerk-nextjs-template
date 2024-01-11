@@ -14,11 +14,54 @@ import { Docs, Github, Times } from "./icons";
 import { Twitter } from "./icons";
 import { Discord } from "./icons";
 import { Metadata } from "next";
-import Header from"@/src/components/Header";
-import { AuthInfo } from "../components/AuthInfo";
+import { Header } from"@/src/components/Header";
+import { AuthInfo } from "@/src/components/AuthInfo";
 import Footer from "@/src/components/Footer"
+import theme from "@/src/config/theme.json";
 
-const inter = Inter({ subsets: ["latin"] });
+//import SearchModal from "@/components/SearchModal";
+
+import config from "@/src/config/config.json";
+
+
+
+//import TwSizeIndicator from "@/helpers/TwSizeIndicator";
+
+
+import "../styles/navigate.css";
+
+import "../styles/main.scss";
+import "./globals.css"
+
+
+import { Raleway, Bowlby_One_SC } from 'next/font/google';
+
+
+
+
+const bowlbySC = Bowlby_One_SC({
+
+weight: '400',
+
+display: 'swap',
+
+subsets: ['latin'],
+
+variable: '--font-bowlbySC',
+
+  });
+
+
+  const raleway = Raleway({
+
+  subsets: ['latin'],
+
+display: 'swap',
+
+ variable: '--font-raleway',	
+
+  });
+
 
 export const metadata: Metadata = {
   title: "8zense.com",
@@ -51,7 +94,7 @@ export default function RootLayout({
           },
         }}
       >
-        <body className={`${inter.className} min-h-screen flex flex-col`}>
+        <body className={`${raleway.className} min-h-screen flex flex-col`}>
           {/*<header className="bg-lime-900/60 flex items-center h-20 gap-4 px-4 border-b border-amber-600 border-solid sm:px-8 border-opacity-20">
             <Link href="/" className="flex items-center h-20 gap-2 sm:gap-4">
               <Image
@@ -90,9 +133,9 @@ export default function RootLayout({
               <UserButton afterSignOutUrl="/" />
             </SignedIn>
                 </header>*/}
-                <Header/>
+                <Header>
                   <AuthInfo/>
-                
+                </Header>
           <main className="grow">{children}</main>
           <Footer/>
           {/*<footer className="flex items-center h-20 gap-1 px-8 font-medium border-t md:px-20">

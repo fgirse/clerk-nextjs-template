@@ -6,12 +6,34 @@ import "./home.css";
 
 export default function Home() {
   return (
-    <main className="">
-      <article className="grid lg:grid-cols-2">
-        <div className="px-8 py-20 md:px-20 lg:py-48">
-          <h1 className="text-5xl font-semibold text-transparent md:text-6xl gradient">
+    <>
+    <main className="container bg">
+
+          
+<div className="bg-gray-200 border-zinc-800 grid grid-cols-12 grid-rows-12 gap-8">
+    <div className="col-span-8 row-span-3">1
+    <h1 className="text-5xl font-semibold text-transparent md:text-6xl gradient">
             Timeless Design
           </h1>
+    </div>
+    <div className="col-span-4 row-span-4 col-start-9">2</div>
+    <div className="col-span-2 row-span-2 col-start-11 row-start-5">3</div>
+    <div className="col-span-4 row-span-4 col-start-5 row-start-7">4</div>
+    <div className="col-span-2 row-span-3 col-start-9 row-start-5">5</div>
+    <div className="col-span-3 row-span-3 col-start-1 row-start-4">7</div>
+    <div className="col-span-4 row-span-4 col-start-9 row-start-8">8</div>
+    <div className="col-span-4 row-span-4 col-start-1 row-start-7">9</div>
+    <div className="col-span-5 row-span-3 col-start-4 row-start-4">10</div>
+    <div className="col-span-6 row-span-2 col-start-3 row-start-11">11</div>
+    <div className="col-span-2 col-start-11 row-start-7">12</div>
+    <div className="col-span-2 row-span-2 col-start-1 row-start-11">13</div>
+    <div className="col-span-4 col-start-9 row-start-12">14</div>
+</div>
+    
+
+      <article className="grid lg:grid-cols-2">
+        <div className="px-8 py-20 md:px-20 lg:py-48">
+          
           <p className="mt-2 text-lg">
           &laquo;the beauty of a living thing is not the atoms that go into it -but the way those atoms are put together...&raquo;
           </p>
@@ -105,5 +127,6 @@ export default function Home() {
         </div>
       </article>
     </main>
+    </>
   );
 }

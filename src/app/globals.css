@@ -2,5 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.body {
+  /*
+    * Created ith https://www.css-gradient.com
+    * Gradient link: https://www.css-gradient.com/?c1=06265f&c2=181818&gt=l&gd=dbb
+    */
+  background: rgba(6, 38, 95, 1);
+  background: linear-gradient(0deg, rgba(6, 38, 95, 1), rgba(24, 24, 24, 1));
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 
