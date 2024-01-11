@@ -5,6 +5,7 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 import "./globals.css";
+import "../styles/navigate.css"
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,6 +14,9 @@ import { Docs, Github, Times } from "./icons";
 import { Twitter } from "./icons";
 import { Discord } from "./icons";
 import { Metadata } from "next";
+import Header from"@/src/components/Header";
+import { AuthInfo } from "../components/AuthInfo";
+import Footer from "@/src/components/Footer"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -48,7 +52,7 @@ export default function RootLayout({
         }}
       >
         <body className={`${inter.className} min-h-screen flex flex-col`}>
-          <header className="bg-lime-900/60 flex items-center h-20 gap-4 px-4 border-b border-amber-600 border-solid sm:px-8 border-opacity-20">
+          {/*<header className="bg-lime-900/60 flex items-center h-20 gap-4 px-4 border-b border-amber-600 border-solid sm:px-8 border-opacity-20">
             <Link href="/" className="flex items-center h-20 gap-2 sm:gap-4">
               <Image
                 src="/images/LogoEZ.png"
@@ -64,7 +68,7 @@ export default function RootLayout({
                 width={90}
                 height={18}
                 priority
-      />*/}
+      />
             </Link>
             <div className="grow" />
             <SignedIn>
@@ -85,12 +89,16 @@ export default function RootLayout({
               </div>
               <UserButton afterSignOutUrl="/" />
             </SignedIn>
-          </header>
+                </header>*/}
+                <Header/>
+                  <AuthInfo/>
+                
           <main className="grow">{children}</main>
-          <footer className="flex items-center h-20 gap-1 px-8 font-medium border-t md:px-20">
+          <Footer/>
+          {/*<footer className="flex items-center h-20 gap-1 px-8 font-medium border-t md:px-20">
             <Image
-              src="/clerk.svg"
-              alt="Clerk Logo"
+              src="/images/LogoEZ.png"
+              alt="8zense Logo"
               width={64}
               height={32}
               priority
@@ -129,7 +137,7 @@ export default function RootLayout({
                 <Discord />
               </a>
             </nav>
-          </footer>
+          </footer>*/}
         </body>
       </ClerkProvider>
 

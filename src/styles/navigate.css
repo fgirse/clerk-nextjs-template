@@ -1,0 +1,79 @@
+input#nav-toggle:checked + label #show-button {
+    @apply hidden;
+  }
+  
+  input#nav-toggle:checked + label #hide-button {
+    @apply block;
+  }
+  
+  input#nav-toggle:checked ~ #nav-menu {
+    @apply block;
+  }
+  
+  .header {
+    @apply  py-6 dark:bg-black bg-neutral-700;
+  }
+  
+  
+  .navbar {
+    @apply relative flex flex-wrap items-center justify-between;
+  }
+  
+  .navbar-brand {
+    @apply text-xl 
+    
+    
+    
+    
+    ;
+  }
+  
+  .nav-dropdown-item {
+    @apply mb-2;
+  }
+  
+  .nav-dropdown-link {
+    @apply block py-1 font-semibold text-gray-800 transition hover:text-slate-400 dark:text-gray-800 dark:hover:text-gray-800;
+  }
+  
+  theme-switcher
+  .theme-switcher {
+    @apply inline-flex;
+  
+    label {
+      @apply relative inline-block h-4 w-6 cursor-pointer rounded-2xl bg-red-500 lg:w-10;
+    }
+  
+    input {
+      @apply absolute opacity-0;
+    }
+  
+    span {
+      @apply absolute -top-1 left-0 dark:lg:left-4 flex h-6 w-6 items-center justify-center rounded-full bg-green-600 transition-all duration-300 dark:bg-white;
+    }
+  
+    input:checked + label {
+      span {
+        @apply lg:left-4;
+      }
+    }
+  }
+  
+   search style
+  .search-icon {
+    @apply cursor-pointer p-2 text-xl text-gray-800 hover:text-yellow-600 dark:text-gray-800;
+  }
+  
+  .search-modal {
+    @apply invisible absolute left-0 right-0 top-0 z-10 h-10 bg-white opacity-0 transition dark:bg-emerald-500 md:h-full;
+    .form-input {
+      @apply h-full w-full border-0 text-lg;
+    }
+    .search-close {
+      @apply absolute right-2 top-1/2 -translate-y-1/2 p-3 ;
+    }
+    &.open {
+      @apply visible opacity-100;
+    }
+  }
+  
