@@ -12,10 +12,10 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .header {
-  @apply bg-body py-6 dark:bg-darkmode-body;
+  @apply bg-zinc-700 py-6 dark:bg-darkmode-body;
 }
 
-// navbar items
+
 .navbar {
   @apply relative flex flex-wrap items-center justify-between;
 }
@@ -31,12 +31,12 @@ input#nav-toggle:checked ~ #nav-menu {
   @apply text-center lg:text-left;
 }
 
-// .nav-item {
-//   @apply mx-3;
-// }
+.nav-item {
+   @apply mx-3;
+ }
 
 .nav-link {
-  @apply block p-3 font-semibold text-dark transition hover:text-primary dark:text-darkmode-dark lg:px-2 lg:py-3;
+  @apply block p-3 font-semibold text-slate-200 transition hover:text-red-800 dark:text-darkmode-dark lg:px-2 lg:py-3;
 }
 
 .nav-dropdown {
@@ -44,7 +44,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-dropdown-list {
-  @apply z-10 min-w-[180px] rounded bg-body p-4 shadow dark:bg-darkmode-body;
+  @apply z-10 min-w-[180px] rounded bg-zinc-600 p-4 shadow dark:bg-darkmode-body;
 }
 
 .nav-dropdown-item {
@@ -52,7 +52,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-dropdown-link {
-  @apply block py-1 font-semibold text-dark transition hover:text-primary dark:text-darkmode-text dark:hover:text-darkmode-primary;
+  @apply block py-1 font-semibold text-dark transition hover:text-red-800 hover:bg-slate-400 dark:text-darkmode-text dark:hover:text-darkmode-primary;
 }
 
 //theme-switcher

@@ -13,12 +13,23 @@ export default function Home() {
 <div className="bg-gray-200 border-zinc-800 grid grid-cols-12 grid-rows-12 gap-8">
     <div className="col-span-8 row-span-3">1
     <h1 className="text-5xl font-semibold text-transparent md:text-6xl gradient">
-            Timeless Design
+            Timeless
+          </h1>
+          <h1 className="text-5xl font-semibold text-transparent md:text-6xl gradient">
+            Design
           </h1>
     </div>
-    <div className="col-span-4 row-span-4 col-start-9">2</div>
+    <div className="bg-white/20 col-span-4 row-span-4 col-start-9">2
+    
+    <p className="mt-2 text-black text-right text-sm">
+          &laquo;the beauty of a living thing is not the atoms that go into it -but the way those atoms are put together...&raquo;
+          </p>
+    </div>
     <div className="col-span-2 row-span-2 col-start-11 row-start-5">3</div>
-    <div className="col-span-4 row-span-4 col-start-5 row-start-7">4</div>
+    <div className="col-span-4 row-span-4 col-start-5 row-start-7">4
+    <Image src="/images/LogoEZ.png" width="250" height="250" alt="Logo: 8zense.com"/>
+    
+    </div>
     <div className="col-span-2 row-span-3 col-start-9 row-start-5">5</div>
     <div className="col-span-3 row-span-3 col-start-1 row-start-4">7</div>
     <div className="col-span-4 row-span-4 col-start-9 row-start-8">8</div>
@@ -34,9 +45,6 @@ export default function Home() {
       <article className="grid lg:grid-cols-2">
         <div className="px-8 py-20 md:px-20 lg:py-48">
           
-          <p className="mt-2 text-lg">
-          &laquo;the beauty of a living thing is not the atoms that go into it -but the way those atoms are put together...&raquo;
-          </p>
           <div className="flex gap-2 mt-8">
             <Link
               href="/dashboard"
