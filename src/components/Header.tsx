@@ -64,7 +64,7 @@ export const Header = ({ children }: { children: React.ReactNode }) => {
 
     <header
 
-      className={`bg-stone-300  z-30 fixed top-0 ${
+      className={`bg-stone-300 header z-30 fixed top-0 ${
 
         settings.sticky_header && "sticky top-0"
 
@@ -78,9 +78,7 @@ export const Header = ({ children }: { children: React.ReactNode }) => {
 
         <div className="order-0 fw ">
 
-          <Logo />
-
-    00eu                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                00eeeee    </div>
+          <Logo />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               00eeeee    </div>
 
         {children}
 
@@ -93,7 +91,7 @@ export const Header = ({ children }: { children: React.ReactNode }) => {
 
           htmlFor="nav-toggle"
 
-          className="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1"
+          className="order-3 cursor-pointer flex items-center lg:hidden text-orange-400 dark:text-white lg:order-1"
 
         >
 

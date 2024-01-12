@@ -7,41 +7,64 @@ import "./home.css";
 export default function Home() {
   return (
     <>
-    <main className="container bg">
-
+    <section className="flex-1 py-3 lg:min-w-full lg:mx-auto">
+        <div className="w-full bg-[url('/images/Grid.svg')]  bg-repeat">
+          <div className=" lg:w-full" >
+            <div className=" bg-gradient-to-b from-sky-950 via-neutral-800">
+{/*====================================================grid start ===============*/}
           
-<div className="bg-gray-200 border-zinc-800 grid grid-cols-12 grid-rows-12 gap-8">
+<div className="py-2 2px-3 rounded-xl border-zinc-800 grid grid-cols-12 grid-rows-12 gap-3">
     <div className="col-span-8 row-span-3">1
-    <h1 className="text-5xl font-semibold text-transparent md:text-6xl gradient">
+    <h1 className="text-5xl font-black  md:text-6xl  bg-gradient-to-b from-zinc-500 to-zinc-200 bg-clip-text text-transparent">
             Timeless
           </h1>
-          <h1 className="text-5xl font-semibold text-transparent md:text-6xl gradient">
+          <h1 className="text-6xl font-black md:text-6xl bg-gradient-to-b from-amber-600 via bg-yellow-500 to-zinc-300 bg-clip-text text-transparent">
             Design
           </h1>
     </div>
-    <div className="bg-white/20 col-span-4 row-span-4 col-start-9">2
+    <div className="rounded-2xl bg-white/10 col-span-4 row-span-4 col-start-9">2
     
-    <p className="mt-2 text-black text-right text-sm">
+    <p className="mt-2 text-zinc-200 bold text-right text-xs px-3">
           &laquo;the beauty of a living thing is not the atoms that go into it -but the way those atoms are put together...&raquo;
           </p>
     </div>
-    <div className="col-span-2 row-span-2 col-start-11 row-start-5">3</div>
-    <div className="col-span-4 row-span-4 col-start-5 row-start-7">4
-    <Image src="/images/LogoEZ.png" width="250" height="250" alt="Logo: 8zense.com"/>
+    <div className="col-span-2 row-span-2 col-start-11 row-start-5">3
+    <div className="relative right-5 shadow-xl shadow-gray-400/50 flex flex-col items-center justify-center text-xs lg:text-xl text-white leading-3 bg-orange-400 rounded-full w-16 h-16 lg:w-20 lg:h-20 lg:left-56">
+                      <p className="text-sm lg:text-xl font-black lg:leading-3">Carl</p>
+                      <p className="text-sm lg:text-xl font-black">Sagan</p>
+                  </div>
+    </div>
+    <div className=" rounded-xl col-span-6 row-span-4 col-start-3 row-start-7">4
+    <div className=" flex flex-col items-center jusify-center">
+    <Image className="rounded-xl" src="/images/LogoEZ.png" width="350" height="350" alt="Logo: 8zense.com"/>
     
+    </div>
     </div>
     <div className="col-span-2 row-span-3 col-start-9 row-start-5">5</div>
     <div className="col-span-3 row-span-3 col-start-1 row-start-4">7</div>
-    <div className="col-span-4 row-span-4 col-start-9 row-start-8">8</div>
-    <div className="col-span-4 row-span-4 col-start-1 row-start-7">9</div>
-    <div className="col-span-5 row-span-3 col-start-4 row-start-4">10</div>
-    <div className="col-span-6 row-span-2 col-start-3 row-start-11">11</div>
+    <div className="bg-white/20 rounded-xl col-span-4 row-span-4 col-start-9 row-start-8">8</div>
+    <div className="bg-white/30 rounded-xl col-span-2 row-span-4 col-start-1 row-start-7">9</div>
+    <div className="bg-yellow-500/20 rounded-xl col-span-5 row-span-3 col-start-4 row-start-4">10
+    <Image
+                  src="/images/sideboardobg.png"
+                  className="mx-auto"
+                  width="600"
+                  height="420"
+                  alt="banner image"
+                  priority
+                />
+    </div>
+    <div className="bg-white/30 rounded-xl col-span-6 row-span-2 col-start-3 row-start-11">11
+    
+    </div>
     <div className="col-span-2 col-start-11 row-start-7">12</div>
     <div className="col-span-2 row-span-2 col-start-1 row-start-11">13</div>
-    <div className="col-span-4 col-start-9 row-start-12">14</div>
+    <div className="bg-white/50 rounded-2xl col-span-4 col-start-9 row-start-12">14</div>
 </div>
     
-
+</div>
+</div>
+</div>
       <article className="grid lg:grid-cols-2">
         <div className="px-8 py-20 md:px-20 lg:py-48">
           
@@ -134,7 +157,7 @@ export default function Home() {
           </div>
         </div>
       </article>
-    </main>
+    </section>
     </>
   );
 }
