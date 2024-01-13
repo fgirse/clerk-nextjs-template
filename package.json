@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev & npx next-video sync -w",
+    "lint": "next lint",
+    "start": "parcel index.html --open"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.21.8",
+    "@mux/mux-uploader-react": "1.0.0-beta.8",
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
     "@types/marked": "^5.0.2",
@@ -23,7 +23,9 @@
     "github-slugger": "^2.0.0",
     "next": "13.4.2",
     "next-themes": "^0.2.1",
+    "next-video": "^0.11.2",
     "nextjs-themes": "^2.1.1",
+    "parcel-bundler": "^1.6.1",
     "postcss": "^8.4.32",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.9",
@@ -34,5 +36,16 @@
     "tailwind-bootstrap-grid": "^5.1.0",
     "tailwindcss": "^3.3.7",
     "typescript": "5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": [],
+  "exports": {
+    "import": "./es6entry.mjs",
+    "require": "./es5entry.cjs"
   }
 }

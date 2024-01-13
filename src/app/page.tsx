@@ -3,6 +3,7 @@ import Link from "next/link";
 import componentsImg from "./assets/components.svg";
 import { DownArrow, RightArrow } from "./icons";
 import "./home.css";
+import Player from "@/src/components/Player"; 
 
 export default function Home() {
   return (
@@ -15,38 +16,38 @@ export default function Home() {
           
 <div className="py-2 2px-3 rounded-xl border-zinc-800 grid grid-cols-12 grid-rows-12 gap-3">
     <div className="col-span-8 row-span-3">1
-    <h1 className="text-5xl font-black  md:text-6xl  bg-gradient-to-b from-zinc-500 to-zinc-200 bg-clip-text text-transparent">
+    <h1 className="text-5xl font-black sm:text-8xl  md:text-8xl  bg-gradient-to-b from-zinc-500 to-zinc-200 bg-clip-text text-transparent">
             Timeless
           </h1>
-          <h1 className="text-6xl font-black md:text-6xl bg-gradient-to-b from-amber-600 via bg-yellow-500 to-zinc-300 bg-clip-text text-transparent">
+          <h1 className="text-6xl font-black md:text-[9.9rem] bg-gradient-to-b from-amber-600 via bg-yellow-500 to-zinc-300 bg-clip-text text-transparent">
             Design
           </h1>
     </div>
     <div className="rounded-2xl bg-white/10 col-span-4 row-span-4 col-start-9">2
     
-    <p className="mt-2 text-zinc-200 bold text-right text-xs px-3">
+    <p className="mt-2 text-zinc-200 bold text-right text-xs px-3 sm:text-2xl md:text-[2.33rem] md:leading-9">
           &laquo;the beauty of a living thing is not the atoms that go into it -but the way those atoms are put together...&raquo;
           </p>
     </div>
     <div className="col-span-2 row-span-2 col-start-11 row-start-5">3
-    <div className="relative right-5 shadow-xl shadow-gray-400/50 flex flex-col items-center justify-center text-xs lg:text-xl text-white leading-3 bg-orange-400 rounded-full w-16 h-16 lg:w-20 lg:h-20 lg:left-56">
-                      <p className="text-sm lg:text-xl font-black lg:leading-3">Carl</p>
-                      <p className="text-sm lg:text-xl font-black">Sagan</p>
+    <div className="relative right-5 shadow-xl shadow-gray-400/50 flex flex-col items-center justify-center text-xs sm:text-3xl md:text-2xl lg:text-3xl text-white leading-3 bg-orange-400 rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 md:-top-1 lg:w-28 lg:h-28 lg:left-56">
+                      <p className="text-sm md:text-2xl md:leading-4 lg:text-xl font-black lg:leading-3">Carl</p>
+                      <p className="text-sm md:text-2xl md:leading-4 lg:text-xl font-black">Sagan</p>
                   </div>
     </div>
     <div className=" rounded-xl col-span-6 row-span-4 col-start-3 row-start-7">4
     <div className=" flex flex-col items-center jusify-center">
-    <Image className="rounded-xl" src="/images/LogoEZ.png" width="350" height="350" alt="Logo: 8zense.com"/>
-    
+    {/*<Image className="rounded-xl" src="/images/LogoEZ.png" width="350" height="350" alt="Logo: 8zense.com"/>*/}
+    <Player/>
     </div>
     </div>
     <div className="col-span-2 row-span-3 col-start-9 row-start-5">5</div>
     <div className="col-span-3 row-span-3 col-start-1 row-start-4">7</div>
     <div className="bg-white/20 rounded-xl col-span-4 row-span-4 col-start-9 row-start-8">8</div>
     <div className="bg-white/30 rounded-xl col-span-2 row-span-4 col-start-1 row-start-7">9</div>
-    <div className="bg-yellow-500/20 rounded-xl col-span-5 row-span-3 col-start-4 row-start-4">10
+    <div className="h-24 bg-yellow-500/20 rounded-xl col-span-5 row-span-3 col-start-4 row-start-4">10
     <Image
-                  src="/images/sideboardobg.png"
+                  src="/images/rastergrafikobg.png"
                   className="mx-auto"
                   width="600"
                   height="420"
@@ -55,7 +56,14 @@ export default function Home() {
                 />
     </div>
     <div className="bg-white/30 rounded-xl col-span-6 row-span-2 col-start-3 row-start-11">11
-    
+  <Image
+                src="/images/zeicnung.svg"
+                className="mx-auto"
+                width="600"
+                height="420"
+                alt="banner image"
+            
+              />
     </div>
     <div className="col-span-2 col-start-11 row-start-7">12</div>
     <div className="col-span-2 row-span-2 col-start-1 row-start-11">13</div>
